@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <com.horizon.fancypicker.ColorPicker
+        android:id="@+id/color_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layerType="software"
+        android:tag="portrait"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_color_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_color"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/new_color_panel"
+        app:layout_constraintRight_toRightOf="@id/new_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/color_picker" />
+
+    <TextView
+        android:id="@+id/current_color_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_color"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/current_color_panel"
+        app:layout_constraintRight_toRightOf="@id/current_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/color_picker" />
+
+    <View
+        android:id="@+id/new_color_panel"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:background="#f00"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/current_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/current_color_tips" />
+
+    <View
+        android:id="@+id/current_color_panel"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:background="#00f"
+        app:layout_constraintBottom_toBottomOf="@id/new_color_panel"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/new_color_panel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_color_panel" />
+
+    <TextView
+        android:id="@+id/red_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="R: 255"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/new_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/new_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/new_color_panel" />
+
+    <TextView
+        android:id="@+id/green_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_text_margin_top"
+        android:text="G: 0"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/new_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/new_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/red_tv" />
+
+    <TextView
+        android:id="@+id/blue_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_text_margin_top"
+        android:text="B: 0"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/new_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/new_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/green_tv" />
+
+    <TextView
+        android:id="@+id/hue_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="H: 0"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/current_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/current_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/current_color_panel" />
+
+    <TextView
+        android:id="@+id/sat_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_text_margin_top"
+        android:text="S: 100"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/current_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/current_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/hue_tv" />
+
+    <TextView
+        android:id="@+id/val_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_text_margin_top"
+        android:text="B: 100"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/current_color_panel"
+        app:layout_constraintRight_toRightOf="@+id/current_color_panel"
+        app:layout_constraintTop_toBottomOf="@id/sat_tv" />
+
+
+    <EditText
+        android:id="@+id/color_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/edit_text"
+        android:imeOptions="actionDone"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+        android:text="fff"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/blue_tv"
+        app:layout_constraintTop_toBottomOf="@id/blue_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:text="#"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/color_et"
+        app:layout_constraintRight_toLeftOf="@id/color_et" />
+
+    <View
+        android:id="@+id/panel_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/panel_divider_color"
+        app:layout_constraintTop_toBottomOf="@id/color_et" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/new_color_tips"
+        app:layout_constraintRight_toRightOf="@+id/new_color_tips"
+        app:layout_constraintTop_toBottomOf="@id/panel_divider" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textSize="@dimen/panel_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/current_color_tips"
+        app:layout_constraintRight_toRightOf="@+id/current_color_tips"
+        app:layout_constraintTop_toBottomOf="@id/panel_divider" />
+
+</android.support.constraint.ConstraintLayout>

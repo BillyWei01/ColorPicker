@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seekbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/color_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="@string/color"
+        android:textColor="@color/gray_33"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.horizon.colorpicker.palette.ColorPalette
+        android:id="@+id/palette"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/square_width"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/color_label_tv"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toRightOf="@id/color_label_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/color_label_tv" />
+
+    <TextView
+        android:id="@+id/alpha_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/alpha"
+        android:textColor="@color/gray_33"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/color_label_tv"
+        app:layout_constraintRight_toRightOf="@id/color_label_tv"
+        app:layout_constraintTop_toBottomOf="@id/color_label_tv" />
+
+    <com.horizon.colorpicker.seekbar.NormalSeekBar
+        android:id="@+id/alphaBar"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/alpha_label_tv"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toRightOf="@id/color_label_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/alpha_label_tv"
+        seekbar:thickness="1dp" />
+
+
+</android.support.constraint.ConstraintLayout>

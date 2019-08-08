@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ColorPicker</string>
+    <string name="hue">Hue</string>
+    <string name="saturation">saturation</string>
+    <string name="brightness">brightness</string>
+    <string name="color">color</string>
+    <string name="alpha">alpha</string>
+    <string name="pick_color">ColorPicker</string>
+    <string name="pick_color_2">FancyColorPicker</string>
+</resources>

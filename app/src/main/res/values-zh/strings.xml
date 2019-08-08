@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ColorPicker</string>
+    <string name="hue">色相</string>
+    <string name="saturation">纯度</string>
+    <string name="brightness">明度</string>
+    <string name="color">颜色</string>
+    <string name="alpha">透明度</string>
+    <string name="pick_color">ColorPicker</string>
+    <string name="pick_color_2">FancyColorPicker</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorBar">
+        <attr name="barThickness" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="NormalSeekBar">
+        <attr name="thickness" format="dimension"/>
+        <attr name="frontColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+</resources>
