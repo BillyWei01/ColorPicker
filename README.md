@@ -15,7 +15,7 @@ This project has implement two kinds of color pickers.
 
 
 ## Link
-https://www.jianshu.com/p/1dde91956d9d
+https://juejin.cn/post/6844903908364697613
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations.
