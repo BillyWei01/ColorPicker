@@ -1,7 +1,7 @@
 
 ## ColorPicker
 
-This project has impleament two kinds of color pickers.
+This project has implement two kinds of color pickers.
 
 
 ### Simple case

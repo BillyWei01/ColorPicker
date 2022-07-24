@@ -2,7 +2,7 @@
 package com.horizon.colorpickerdemo.ui
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,8 +39,8 @@ class PickColorFragment : Fragment(){
         return inflater.inflate(R.layout.fragment_color_picker, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
         arguments?.run { resultColor = getInt("color") }
 
         palette.selectedColor(resultColor)

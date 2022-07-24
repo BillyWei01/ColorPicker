@@ -248,6 +248,9 @@ public class ColorPicker extends View {
 
         a.recycle();
 
+        // ComposeShader doesn't work with hardware accelerated on some devices.
+        setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
         initWheel();
         initSV();
     }
@@ -302,12 +305,8 @@ public class ColorPicker extends View {
         final int intrinsicSize = 2 * (mPreferredColorWheelRadius + mColorPointerHaloRadius);
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
-//        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-//        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
         int a;
-        //int height;
-
         if (widthMode == MeasureSpec.EXACTLY) {
             a = widthSize;
         } else if (widthMode == MeasureSpec.AT_MOST) {
@@ -315,19 +314,6 @@ public class ColorPicker extends View {
         } else {
             a = intrinsicSize;
         }
-
-/*        if (heightMode == MeasureSpec.EXACTLY) {
-            height = heightSize;
-        } else if (heightMode == MeasureSpec.AT_MOST) {
-            height = Math.min(intrinsicSize, heightSize);
-        } else {
-            height = intrinsicSize;
-        }
-         int min = Math.min(width, height);
-        setMeasuredDimension(min, min);
-        */
-
-        // int min = Math.min(width, height);
 
         // make view height always equals to width
         setMeasuredDimension(a, a);

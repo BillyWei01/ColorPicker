@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ColorPicker.iml" filepath="$PROJECT_DIR$/ColorPicker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/colorpicker/colorpicker.iml" filepath="$PROJECT_DIR$/colorpicker/colorpicker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fancypicker/fancypicker.iml" filepath="$PROJECT_DIR$/fancypicker/fancypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ColorPicker.iml" filepath="$PROJECT_DIR$/.idea/modules/ColorPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ColorPicker.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.iml" filepath="$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/colorpicker/ColorPicker.colorpicker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.iml" filepath="$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancypicker/ColorPicker.fancypicker.unitTest.iml" />
     </modules>
   </component>
 </project>
